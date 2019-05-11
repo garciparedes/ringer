@@ -4,6 +4,4 @@ from .version import \
 from .exceptions import \
     RingerException, \
     EmptyRingerException
-from .base import \
-    Ringer
 from .collections import *

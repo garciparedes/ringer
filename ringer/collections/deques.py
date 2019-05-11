@@ -2,7 +2,7 @@ import logging
 
 from typing import Any
 
-from ringer.base import Ringer
+from ringer.collections.base import Ringer
 from ringer.exceptions import EmptyRingerException
 
 logger = logging.getLogger(__name__)
