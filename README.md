@@ -1,7 +1,8 @@
 # ringer
 
-![PyPI](https://img.shields.io/pypi/v/ringer.svg?style=flat-square&url=https://pypi.org/project/ringer)
-
+[![PyPI](https://img.shields.io/pypi/v/ringer.svg)](https://pypi.org/project/ringer)
+[![Travis (.org) branch](https://img.shields.io/travis/garciparedes/ringer/master.svg)](https://travis-ci.org/garciparedes/ringer/branches)
+[![Read the Docs](https://img.shields.io/readthedocs/ringer.svg)](https://ringer.readthedocs.io/)
 ## Description 
 
 Large-scale circular buffering supported by both in-memory and file-system patterns.
