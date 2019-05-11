@@ -3,6 +3,9 @@
 [![PyPI](https://img.shields.io/pypi/v/ringer.svg)](https://pypi.org/project/ringer)
 [![Travis (.org) branch](https://img.shields.io/travis/garciparedes/ringer/master.svg)](https://travis-ci.org/garciparedes/ringer/branches)
 [![Read the Docs](https://img.shields.io/readthedocs/ringer.svg)](https://ringer.readthedocs.io/)
+[![GitHub](https://img.shields.io/github/license/garciparedes/ringer.svg)](https://github.com/garciparedes/ringer/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/garciparedes/ringer.svg)](https://github.com/garciparedes/ringer)
+
 ## Description 
 
 Large-scale circular buffering supported by both in-memory and file-system patterns.

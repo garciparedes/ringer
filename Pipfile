@@ -6,6 +6,8 @@ verify_ssl = true
 [dev-packages]
 twine = "*"
 sphinx = "*"
+coverage = "*"
+coveralls = "*"
 
 [packages]
 ringer = {editable = true,path = "."}
