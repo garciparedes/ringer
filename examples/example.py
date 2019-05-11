@@ -25,6 +25,8 @@ def main():
 
     ring.pop()
 
+    print(ring)
+
 
 if __name__ == '__main__':
     main()
