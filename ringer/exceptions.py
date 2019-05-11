@@ -1,6 +1,6 @@
-class RingException(Exception):
+class RingerException(Exception):
     pass
 
 
-class EmptyRingException(RingException):
+class EmptyRingerException(RingerException):
     pass

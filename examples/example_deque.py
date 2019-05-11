@@ -1,12 +1,12 @@
 import logging
 
-from ringer import RingMemory
+import ringer as rg
 
 
 def main():
     logging.basicConfig(level='DEBUG')
 
-    ring = RingMemory(3)
+    ring = rg.RingerDeque(capacity=3, storage=rg.Storage.MEMORY)
 
     ring.append("A")
     ring.append("B")
