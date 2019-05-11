@@ -2,8 +2,9 @@ import logging
 
 from typing import Any
 
-from ringer.collections.base import Ringer
-from ringer.exceptions import EmptyRingerException
+from ..storages import Storage
+from ..exceptions import EmptyRingerException
+from .base import Ringer
 
 logger = logging.getLogger(__name__)
 
@@ -11,6 +12,10 @@ logger = logging.getLogger(__name__)
 class RingerDeque(Ringer):
 
     def __init__(self, capacity: int, **kwargs):
+
+        if kwargs.get('storage') != Storage.MEMORY:
+            raise NotImplementedError
+
         super().__init__(**kwargs)
         self._container = dict()
         self._capacity = capacity

@@ -1,14 +1,14 @@
 import unittest
 from pathlib import Path
 
-from ringer import RingerList
+import ringer as rg
 
 
 class TestRingMemory(unittest.TestCase):
 
     def setUp(self) -> None:
         self.file_path = Path('test.rgr')
-        self.ring = RingerList(file_path=self.file_path)
+        self.ring = rg.RingerList(file_path=self.file_path, storage=rg.Storage.FILE)
 
     def tearDown(self) -> None:
         self.file_path.unlink()

@@ -3,12 +3,20 @@ from collections import MutableSequence
 from pathlib import Path
 from typing import Any
 
+from ..storages import Storage
+from .base import Ringer
+
 logger = logging.getLogger(__name__)
 
 
-class RingerList(MutableSequence):
+class RingerList(Ringer, MutableSequence):
 
-    def __init__(self, file_path: Path):
+    def __init__(self, file_path: Path, *args, **kwargs):
+        if kwargs.get('storage') != Storage.FILE:
+            raise NotImplementedError
+
+        super().__init__(*args, **kwargs)
+
         self._file_path = file_path
         open(str(self._file_path), 'w').close()
 

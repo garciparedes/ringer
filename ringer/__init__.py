@@ -5,3 +5,4 @@ from .exceptions import \
     RingerException, \
     EmptyRingerException
 from .collections import *
+from .storages import *
