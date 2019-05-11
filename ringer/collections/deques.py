@@ -1,38 +1,21 @@
 import logging
-from abc import ABC, abstractmethod
-from typing import Any
-from uuid import uuid4
 
-from .exceptions import EmptyRingException
+from typing import Any
+
+from ..storages import Storage
+from ..exceptions import EmptyRingerException
+from .base import Ringer
 
 logger = logging.getLogger(__name__)
 
 
-class Ring(ABC):
-
-    def __init__(self, **kwargs):
-        self.uuid = uuid4()
-
-    @abstractmethod
-    def append(self, value: Any):
-        pass
-
-    @abstractmethod
-    def pop(self, index=None) -> Any:
-        pass
-
-
-class RingFile(Ring):
-    pass
-
-
-class RingDirectory(Ring):
-    pass
-
-
-class RingMemory(Ring):
+class RingerDeque(Ringer):
 
     def __init__(self, capacity: int, **kwargs):
+
+        if kwargs.get('storage') != Storage.MEMORY:
+            raise NotImplementedError
+
         super().__init__(**kwargs)
         self._container = dict()
         self._capacity = capacity
@@ -73,7 +56,7 @@ class RingMemory(Ring):
         try:
             value = self._container.pop(index)
         except KeyError as e:
-            raise EmptyRingException
+            raise EmptyRingerException
         self._pop_index = (self._pop_index + 1) % self.capacity
 
         logger.debug('Performed pop(). Container: "{}", Extracted value: "{}".'.format(self._container, value))

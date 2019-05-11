@@ -4,6 +4,8 @@ python:
 cache: pip
 install:
   - 'pip install pipenv'
-  - 'pipenv sync'
+  - 'pipenv sync --dev'
 script:
-  - python -m unittest discover tests
+  - 'coverage run --source=ringer --module unittest discover tests'
+after_success:
+  - 'coveralls'
