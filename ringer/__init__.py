@@ -1,3 +1,7 @@
+from .version import \
+    VERSION, \
+    __version__
+
 from .exceptions import \
     RingException, \
     EmptyRingException
