@@ -9,11 +9,11 @@ with open('README.md', encoding='utf-8') as f:
 with open(convert_path('{}/version.py'.format(module_name))) as file:
     main_ns = dict()
     exec(file.read(), main_ns)
-    version = main_ns['__version__']
+    module_version = main_ns['__version__']
 
 setup(
     name=module_name,
-    version='1.0.0',
+    version=module_version,
     url='https://github.com/garciparedes/ringer',
     author='Sergio García Prado',
     author_email='sergio@garciparedes.me',

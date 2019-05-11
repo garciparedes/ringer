@@ -1,11 +1,18 @@
 # ringer
 
+![PyPI](https://img.shields.io/pypi/v/ringer.svg?style=flat-square&url=https://pypi.org/project/ringer)
+
 ## Description 
 
 Large-scale circular buffering supported by both in-memory and file-system patterns.
 
 ## Installation
-[TODO]
+
+You can install the latest ``ringer`` version via ``pip``:
+
+```bash
+pip install ringer
+```
 
 ## Usage
 [TODO]
