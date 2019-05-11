@@ -22,14 +22,6 @@ class Ring(ABC):
         pass
 
 
-class RingFile(Ring):
-    pass
-
-
-class RingDirectory(Ring):
-    pass
-
-
 class RingMemory(Ring):
 
     def __init__(self, capacity: int, **kwargs):
@@ -81,3 +73,11 @@ class RingMemory(Ring):
 
     def __str__(self):
         return '{}(contents="{}", capacity="{}")'.format(self.__class__.__name__, self._container, self._capacity)
+
+
+class RingFile(Ring):
+    pass
+
+
+class RingDirectory(Ring):
+    pass
