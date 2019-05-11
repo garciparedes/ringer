@@ -9,7 +9,7 @@
 
 ## Description 
 
-Large-scale data structures supported by both in-memory and file-system patterns.
+Large-scale data structures supported by the file-system.
 
 
 ## Installation

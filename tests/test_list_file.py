@@ -4,7 +4,7 @@ from pathlib import Path
 import ringer as rg
 
 
-class TestRingMemory(unittest.TestCase):
+class TestRingerList(unittest.TestCase):
 
     def setUp(self) -> None:
         self.file_path = Path('test.rgr')

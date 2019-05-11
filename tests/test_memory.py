@@ -3,7 +3,7 @@ import unittest
 import ringer as rg
 
 
-class TestRingMemory(unittest.TestCase):
+class TestRingerDeque(unittest.TestCase):
 
     def test_constructor(self):
         capacity = 5
