@@ -47,6 +47,9 @@ class RingMemory(Ring):
     def capacity(self) -> int:
         return self._capacity
 
+    def __len__(self) -> int:
+        return len(self._container)
+
     def append(self, value: Any):
         logger.debug('Performing append()...')
         logger.debug('append_index: "{}", pop_index: "{}", size: "{}"'.format(
