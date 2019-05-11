@@ -17,7 +17,7 @@ setup(
     url='https://github.com/garciparedes/ringer',
     author='Sergio García Prado',
     author_email='sergio@garciparedes.me',
-    description='Large-scale circular buffering supported by both in-memory and file-system patterns',
+    description='Large-scale circular buffering supported by the file-system',
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=find_packages(),
