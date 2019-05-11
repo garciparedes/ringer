@@ -1,6 +1,7 @@
 # ringer
 
-![PyPI](https://img.shields.io/pypi/v/ringer.svg?style=flat-square&url=https://pypi.org/project/ringer)
+[![PyPI](https://img.shields.io/pypi/v/ringer.svg?style=flat-square)](https://pypi.org/project/ringer)
+[![Travis (.org) branch](https://img.shields.io/travis/garciparedes/ringer/master.svg?style=flat-square)](https://travis-ci.org/garciparedes/ringer/branches)
 
 ## Description 
 
