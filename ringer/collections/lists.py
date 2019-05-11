@@ -6,7 +6,7 @@ from typing import Any
 logger = logging.getLogger(__name__)
 
 
-class ListFile(MutableSequence):
+class RingerList(MutableSequence):
 
     def __init__(self, file_path: Path):
         self._file_path = file_path

@@ -1,19 +1,19 @@
 import unittest
 
 from ringer import \
-    RingMemory, \
-    EmptyRingException
+    RingerDeque, \
+    EmptyRingerException
 
 
 class TestRingMemory(unittest.TestCase):
 
     def test_constructor(self):
         capacity = 5
-        ring = RingMemory(capacity=capacity)
+        ring = RingerDeque(capacity=capacity)
         self.assertEqual(ring.capacity, capacity)
 
     def test_append(self):
-        ring = RingMemory(3)
+        ring = RingerDeque(capacity=3)
 
         ring.append('A')
         self.assertEqual(len(ring), 1)
@@ -28,7 +28,7 @@ class TestRingMemory(unittest.TestCase):
         self.assertEqual(len(ring), 3)
 
     def test_pop(self):
-        ring = RingMemory(3)
+        ring = RingerDeque(capacity=3)
 
         ring.append('A')
         ring.append('B')
@@ -44,7 +44,7 @@ class TestRingMemory(unittest.TestCase):
         result = ring.pop()
         self.assertEqual(result, 'D')
 
-        self.assertRaises(EmptyRingException, ring.pop)
+        self.assertRaises(EmptyRingerException, ring.pop)
 
 
 if __name__ == '__main__':

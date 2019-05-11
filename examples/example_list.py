@@ -1,14 +1,14 @@
 import logging
 from pathlib import Path
 
-from ringer import ListFile
+from ringer import RingerList
 
 
 def main():
     logging.basicConfig(level='DEBUG')
 
     file_path = Path('test.rgr')
-    ring = ListFile(file_path)
+    ring = RingerList(file_path=file_path)
 
     ring.append("A")
     ring.append("A")
