@@ -1,5 +1,5 @@
 import logging
-from collections import MutableSequence, Sequence
+from collections.abc import MutableSequence, Sequence
 from pathlib import Path
 from typing import Any, Iterable
 
