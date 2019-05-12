@@ -8,6 +8,8 @@ twine = "*"
 sphinx = "*"
 coverage = "*"
 coveralls = "*"
+pylint = "*"
+autopep8 = "*"
 
 [packages]
 ringer = {editable = true,path = "."}
