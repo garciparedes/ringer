@@ -9,7 +9,7 @@
 
 ## Description 
 
-Large-scale data structures supported by the file-system.
+Large-scale data structures hosted on the file-system.
 
 
 ## Installation
@@ -39,3 +39,7 @@ To run the tests perform:
 ```bash
 python -m unittest discover tests
 ```
+
+## License
+
+- This project is licensed under **[MIT license](http://opensource.org/licenses/mit-license.php)**.
