@@ -6,7 +6,7 @@ module_name = 'ringer'
 with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
-with open(convert_path('{}/version.py'.format(module_name))) as file:
+with open(convert_path('{}/_version.py'.format(module_name))) as file:
     main_ns = dict()
     exec(file.read(), main_ns)
     module_version = main_ns['__version__']

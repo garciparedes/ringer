@@ -1,4 +1,4 @@
-from .version import \
+from ._version import \
     VERSION, \
     __version__
 from .exceptions import \
